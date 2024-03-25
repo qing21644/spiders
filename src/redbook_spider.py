@@ -8,10 +8,10 @@ import cv2
 import numpy as np
 
 urls = [
-    'https://www.xiaohongshu.com/explore/63974cc9000000001f0134b4',
+    'https://www.xiaohongshu.com/explore/65f68b93000000001203d745',
     # 'https://www.xiaohongshu.com/explore/60a5f16f0000000021034cb4'
 ]
-cookie = ''  # 换成自己的cookie哦~
+cookie = 'acw_tc=303926c8000a00e22f975dd37b5d39d422cfa5569e15437a99f18ad5ecb75b60;path=/;HttpOnly;Max-Age=1800'  # 换成自己的cookie哦~
 
 
 def mkdir(path):
@@ -33,7 +33,7 @@ def fetchUrl(url):
     '''
     headers = {
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9 ',
-        'cookie': cookie,
+        'cookie': 'acw_tc=47bea419351155e62d75dc5939b2f18fe625d7e3f0983380c29defbf8f429c9a;path=/;HttpOnly;Max-Age=1800',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4098.3 Safari/537.36',
     }
 
@@ -97,7 +97,7 @@ def roopLink(urls):
             download(url, traceId, title)
 
 
-if __name__ == '__main__':
+if __name__ == 'https://www.xiaohongshu.com/explore/65f68b93000000001203d745':
     # 输入小红书的链接
 
     roopLink(urls)
